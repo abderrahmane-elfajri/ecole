@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>École de Coiffure et Esthétique | مدرسة التجميل والحلاقة</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Bouton de changement de langue -->
+    <div class="language-switcher">
+        <button id="langBtn" onclick="toggleLanguage()">
+            <i class="fas fa-globe"></i>
+            <span id="langText">العربية</span>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-cut"></i>
+                <span data-fr="École de Coiffure" data-ar="مدرسة التجميل">École de Coiffure</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#accueil" data-fr="Accueil" data-ar="الرئيسية">Accueil</a></li>
+                <li><a href="#apropos" data-fr="À Propos" data-ar="من نحن">À Propos</a></li>
+                <li><a href="#formations" data-fr="Formations" data-ar="التكوينات">Formations</a></li>
+                <li><a href="#galerie" data-fr="Galerie" data-ar="معرض الصور">Galerie</a></li>
+                <li><a href="#temoignages" data-fr="Témoignages" data-ar="شهادات">Témoignages</a></li>
+                <li><a href="#contact" data-fr="Contact" data-ar="اتصل بنا">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Hero -->
+    <section id="accueil" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 data-fr="Bienvenue à Notre École de Coiffure et Esthétique" 
+                data-ar="مرحبا بكم في مدرسة التجميل والحلاقة">
+                Bienvenue à Notre École de Coiffure et Esthétique
+            </h1>
+            <p data-fr="Formez-vous aux métiers de la beauté avec les meilleurs professionnels" 
+               data-ar="تكوين مهني في مجال التجميل مع أفضل المحترفين">
+                Formez-vous aux métiers de la beauté avec les meilleurs professionnels
+            </p>
+            <div class="hero-buttons">
+                <a href="#formations" class="btn btn-primary" data-fr="Nos Formations" data-ar="تكويناتنا">Nos Formations</a>
+                <a href="#contact" class="btn btn-secondary" data-fr="Nous Contacter" data-ar="اتصل بنا">Nous Contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À Propos -->
+    <section id="apropos" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-fr="À Propos de Notre École" data-ar="عن مدرستنا">À Propos de Notre École</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 data-fr="Excellence et Passion" data-ar="التميز والشغف">Excellence et Passion</h3>
+                    <p data-fr="Notre école de coiffure et d'esthétique offre une formation complète et professionnelle dans les métiers de la beauté. Avec plus de 15 ans d'expérience, nous formons les futurs experts en coiffure, esthétique et soins de beauté." 
+                       data-ar="مدرستنا للتجميل والحلاقة تقدم تكوينا شاملا ومهنيا في مجالات الجمال. مع أكثر من 15 سنة من الخبرة، نقوم بتكوين خبراء المستقبل في الحلاقة والتجميل والعناية بالجمال.">
+                        Notre école de coiffure et d'esthétique offre une formation complète et professionnelle dans les métiers de la beauté. Avec plus de 15 ans d'expérience, nous formons les futurs experts en coiffure, esthétique et soins de beauté.
+                    </p>
+                    <div class="features">
+                        <div class="feature-item">
+                            <i class="fas fa-certificate"></i>
+                            <h4 data-fr="Diplômes Reconnus" data-ar="شهادات معترف بها">Diplômes Reconnus</h4>
+                            <p data-fr="Certifications professionnelles reconnues" data-ar="شهادات مهنية معترف بها">Certifications professionnelles reconnues</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-users"></i>
+                            <h4 data-fr="Formateurs Experts" data-ar="مكونون خبراء">Formateurs Experts</h4>
+                            <p data-fr="Professionnels avec années d'expérience" data-ar="محترفون ذوو سنوات من الخبرة">Professionnels avec années d'expérience</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-briefcase"></i>
+                            <h4 data-fr="Insertion Professionnelle" data-ar="الإدماج المهني">Insertion Professionnelle</h4>
+                            <p data-fr="Aide à l'emploi après formation" data-ar="مساعدة في التوظيف بعد التكوين">Aide à l'emploi après formation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Formations -->
+    <section id="formations" class="formations">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-fr="Nos Formations" data-ar="تكويناتنا">Nos Formations</h2>
+                <div class="divider"></div>
+                <p data-fr="Découvrez nos programmes de formation professionnelle" 
+                   data-ar="اكتشف برامج التكوين المهني">
+                    Découvrez nos programmes de formation professionnelle
+                </p>
+            </div>
+            <div class="formations-grid">
+                <div class="formation-card">
+                    <div class="card-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3 data-fr="Coiffure Professionnelle" data-ar="الحلاقة المهنية">Coiffure Professionnelle</h3>
+                    <p data-fr="Formation complète en techniques de coupe, coloration et coiffage pour hommes et femmes." 
+                       data-ar="تكوين شامل في تقنيات القص والصباغة والتسريح للرجال والنساء.">
+                        Formation complète en techniques de coupe, coloration et coiffage pour hommes et femmes.
+                    </p>
+                    <ul>
+                        <li data-fr="Techniques de coupe moderne" data-ar="تقنيات القص الحديثة">Techniques de coupe moderne</li>
+                        <li data-fr="Coloration et mèches" data-ar="الصباغة والخصل">Coloration et mèches</li>
+                        <li data-fr="Coiffures et brushing" data-ar="التسريحات والتمليس">Coiffures et brushing</li>
+                        <li data-fr="Soins capillaires" data-ar="العناية بالشعر">Soins capillaires</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="duration" data-fr="Durée: 12 mois" data-ar="المدة: 12 شهرا">Durée: 12 mois</span>
+                        <a href="#contact" class="btn-small" data-fr="S'inscrire" data-ar="التسجيل">S'inscrire</a>
+                    </div>
+                </div>
+
+                <div class="formation-card">
+                    <div class="card-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3 data-fr="Esthétique et Soins" data-ar="التجميل والعناية">Esthétique et Soins</h3>
+                    <p data-fr="Maîtrisez l'art des soins du visage, du corps et des techniques de maquillage professionnel." 
+                       data-ar="أتقن فن العناية بالوجه والجسم وتقنيات المكياج المهنية.">
+                        Maîtrisez l'art des soins du visage, du corps et des techniques de maquillage professionnel.
+                    </p>
+                    <ul>
+                        <li data-fr="Soins du visage" data-ar="العناية بالوجه">Soins du visage</li>
+                        <li data-fr="Maquillage professionnel" data-ar="المكياج المهني">Maquillage professionnel</li>
+                        <li data-fr="Épilation et manucure" data-ar="إزالة الشعر والباديكير">Épilation et manucure</li>
+                        <li data-fr="Massages relaxants" data-ar="التدليك الاسترخائي">Massages relaxants</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="duration" data-fr="Durée: 10 mois" data-ar="المدة: 10 أشهر">Durée: 10 mois</span>
+                        <a href="#contact" class="btn-small" data-fr="S'inscrire" data-ar="التسجيل">S'inscrire</a>
+                    </div>
+                </div>
+
+                <div class="formation-card">
+                    <div class="card-icon">
+                        <i class="fas fa-hand-sparkles"></i>
+                    </div>
+                    <h3 data-fr="Manucure & Pédicure" data-ar="العناية باليدين والقدمين">Manucure & Pédicure</h3>
+                    <p data-fr="Formation spécialisée en soins des ongles, nail art et techniques avancées de beauté des mains et pieds." 
+                       data-ar="تكوين متخصص في العناية بالأظافر وفن الأظافر وتقنيات جمال اليدين والقدمين المتقدمة.">
+                        Formation spécialisée en soins des ongles, nail art et techniques avancées de beauté des mains et pieds.
+                    </p>
+                    <ul>
+                        <li data-fr="Techniques de manucure" data-ar="تقنيات العناية باليدين">Techniques de manucure</li>
+                        <li data-fr="Nail art créatif" data-ar="فن الأظافر الإبداعي">Nail art créatif</li>
+                        <li data-fr="Pose de vernis gel" data-ar="وضع طلاء الجل">Pose de vernis gel</li>
+                        <li data-fr="Soins pédicure" data-ar="العناية بالقدمين">Soins pédicure</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="duration" data-fr="Durée: 6 mois" data-ar="المدة: 6 أشهر">Durée: 6 mois</span>
+                        <a href="#contact" class="btn-small" data-fr="S'inscrire" data-ar="التسجيل">S'inscrire</a>
+                    </div>
+                </div>
+
+                <div class="formation-card">
+                    <div class="card-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 data-fr="Formation Complète" data-ar="التكوين الشامل">Formation Complète</h3>
+                    <p data-fr="Programme intégral combinant toutes les disciplines de la coiffure et de l'esthétique." 
+                       data-ar="برنامج شامل يجمع بين جميع تخصصات الحلاقة والتجميل.">
+                        Programme intégral combinant toutes les disciplines de la coiffure et de l'esthétique.
+                    </p>
+                    <ul>
+                        <li data-fr="Toutes les techniques de coiffure" data-ar="جميع تقنيات الحلاقة">Toutes les techniques de coiffure</li>
+                        <li data-fr="Soins esthétiques complets" data-ar="العناية الجمالية الكاملة">Soins esthétiques complets</li>
+                        <li data-fr="Gestion de salon" data-ar="إدارة الصالون">Gestion de salon</li>
+                        <li data-fr="Stage en entreprise" data-ar="تدريب في المؤسسة">Stage en entreprise</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="duration" data-fr="Durée: 18 mois" data-ar="المدة: 18 شهرا">Durée: 18 mois</span>
+                        <a href="#contact" class="btn-small" data-fr="S'inscrire" data-ar="التسجيل">S'inscrire</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Galerie -->
+    <section id="galerie" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-fr="Notre Galerie" data-ar="معرض الصور">Notre Galerie</h2>
+                <div class="divider"></div>
+                <p data-fr="Découvrez le travail de nos élèves et formateurs" 
+                   data-ar="اكتشف عمل طلابنا ومدربينا">
+                    Découvrez le travail de nos élèves et formateurs
+                </p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800&h=600&fit=crop" alt="Coiffure">
+                    <div class="gallery-overlay">
+                        <h3 data-fr="Coupe Moderne" data-ar="قصة عصرية">Coupe Moderne</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&h=600&fit=crop" alt="Coloration">
+                    <div class="gallery-overlay">
+                        <h3 data-fr="Coloration" data-ar="الصباغة">Coloration</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=800&h=600&fit=crop" alt="Maquillage">
+                    <div class="gallery-overlay">
+                        <h3 data-fr="Maquillage" data-ar="المكياج">Maquillage</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=800&h=600&fit=crop" alt="Soins">
+                    <div class="gallery-overlay">
+                        <h3 data-fr="Soins du Visage" data-ar="العناية بالوجه">Soins du Visage</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&h=600&fit=crop" alt="Manucure">
+                    <div class="gallery-overlay">
+                        <h3 data-fr="Nail Art" data-ar="فن الأظافر">Nail Art</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=800&h=600&fit=crop" alt="Salon">
+                    <div class="gallery-overlay">
+                        <h3 data-fr="Notre Salon" data-ar="صالوننا">Notre Salon</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Témoignages -->
+    <section id="temoignages" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-fr="Témoignages" data-ar="شهادات">Témoignages</h2>
+                <div class="divider"></div>
+                <p data-fr="Ce que disent nos anciens élèves" 
+                   data-ar="ما يقوله طلابنا السابقون">
+                    Ce que disent nos anciens élèves
+                </p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p data-fr="Une formation exceptionnelle! Les formateurs sont très professionnels et passionnés. J'ai ouvert mon propre salon 6 mois après la fin de ma formation." 
+                       data-ar="تكوين استثنائي! المدربون محترفون جدا ومتحمسون. افتتحت صالوني الخاص بعد 6 أشهر من نهاية التكوين.">
+                        Une formation exceptionnelle! Les formateurs sont très professionnels et passionnés. J'ai ouvert mon propre salon 6 mois après la fin de ma formation.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Fatima Zahra</h4>
+                            <span data-fr="Diplômée Coiffure 2024" data-ar="خريجة الحلاقة 2024">Diplômée Coiffure 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p data-fr="L'école m'a donné toutes les compétences nécessaires pour réussir. Le matériel est moderne et les cours sont très pratiques." 
+                       data-ar="أعطتني المدرسة كل المهارات اللازمة للنجاح. المعدات حديثة والدروس عملية جدا.">
+                        L'école m'a donné toutes les compétences nécessaires pour réussir. Le matériel est moderne et les cours sont très pratiques.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Youssef Benali</h4>
+                            <span data-fr="Diplômé Esthétique 2023" data-ar="خريج التجميل 2023">Diplômé Esthétique 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p data-fr="Je recommande vivement cette école! L'ambiance est excellente et j'ai appris énormément. Maintenant je travaille dans un grand salon à Casablanca." 
+                       data-ar="أوصي بشدة بهذه المدرسة! الأجواء ممتازة وتعلمت كثيرا. الآن أعمل في صالون كبير في الدار البيضاء.">
+                        Je recommande vivement cette école! L'ambiance est excellente et j'ai appris énormément. Maintenant je travaille dans un grand salon à Casablanca.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Amina El Idrissi</h4>
+                            <span data-fr="Diplômée Formation Complète 2024" data-ar="خريجة التكوين الشامل 2024">Diplômée Formation Complète 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-fr="Contactez-Nous" data-ar="اتصل بنا">Contactez-Nous</h2>
+                <div class="divider"></div>
+                <p data-fr="Nous sommes là pour répondre à toutes vos questions" 
+                   data-ar="نحن هنا للإجابة على جميع أسئلتك">
+                    Nous sommes là pour répondre à toutes vos questions
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3 data-fr="Adresse" data-ar="العنوان">Adresse</h3>
+                            <p data-fr="123 Avenue Mohammed V, Casablanca, Maroc" 
+                               data-ar="123 شارع محمد الخامس، الدار البيضاء، المغرب">
+                                123 Avenue Mohammed V, Casablanca, Maroc
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3 data-fr="Téléphone" data-ar="الهاتف">Téléphone</h3>
+                            <p>+212 5XX-XXXXXX</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3 data-fr="Email" data-ar="البريد الإلكتروني">Email</h3>
+                            <p>contact@ecolecoiffure.ma</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3 data-fr="Horaires" data-ar="ساعات العمل">Horaires</h3>
+                            <p data-fr="Lun - Ven: 9h00 - 18h00" data-ar="الإثنين - الجمعة: 9:00 - 18:00">Lun - Ven: 9h00 - 18h00</p>
+                            <p data-fr="Sam: 9h00 - 13h00" data-ar="السبت: 9:00 - 13:00">Sam: 9h00 - 13h00</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label for="name" data-fr="Nom Complet" data-ar="الاسم الكامل">Nom Complet</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email" data-fr="Email" data-ar="البريد الإلكتروني">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" required>
+                        <label for="phone" data-fr="Téléphone" data-ar="الهاتف">Téléphone</label>
+                    </div>
+                    <div class="form-group">
+                        <select id="formation" required>
+                            <option value="" data-fr="Choisir une formation" data-ar="اختر تكوينا">Choisir une formation</option>
+                            <option value="coiffure" data-fr="Coiffure Professionnelle" data-ar="الحلاقة المهنية">Coiffure Professionnelle</option>
+                            <option value="esthetique" data-fr="Esthétique et Soins" data-ar="التجميل والعناية">Esthétique et Soins</option>
+                            <option value="manucure" data-fr="Manucure & Pédicure" data-ar="العناية باليدين والقدمين">Manucure & Pédicure</option>
+                            <option value="complete" data-fr="Formation Complète" data-ar="التكوين الشامل">Formation Complète</option>
+                        </select>
+                        <label for="formation" data-fr="Formation Souhaitée" data-ar="التكوين المطلوب">Formation Souhaitée</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" required></textarea>
+                        <label for="message" data-fr="Message" data-ar="الرسالة">Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-fr="Envoyer" data-ar="إرسال">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-fr="À Propos" data-ar="عن المدرسة">À Propos</h3>
+                    <p data-fr="École de coiffure et d'esthétique professionnelle offrant des formations de qualité depuis 2009." 
+                       data-ar="مدرسة التجميل والحلاقة المهنية تقدم تكوينات عالية الجودة منذ 2009.">
+                        École de coiffure et d'esthétique professionnelle offrant des formations de qualité depuis 2009.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-fr="Liens Rapides" data-ar="روابط سريعة">Liens Rapides</h3>
+                    <ul>
+                        <li><a href="#accueil" data-fr="Accueil" data-ar="الرئيسية">Accueil</a></li>
+                        <li><a href="#formations" data-fr="Formations" data-ar="التكوينات">Formations</a></li>
+                        <li><a href="#galerie" data-fr="Galerie" data-ar="معرض الصور">Galerie</a></li>
+                        <li><a href="#contact" data-fr="Contact" data-ar="اتصل بنا">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-fr="Suivez-Nous" data-ar="تابعنا">Suivez-Nous</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 <span data-fr="École de Coiffure et Esthétique. Tous droits réservés." 
+                                     data-ar="مدرسة التجميل والحلاقة. جميع الحقوق محفوظة.">
+                    École de Coiffure et Esthétique. Tous droits réservés.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

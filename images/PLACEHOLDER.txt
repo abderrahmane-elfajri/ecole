@@ -1,0 +1,15 @@
+# PLACEHOLDER IMAGE
+
+Ce fichier sera remplacé par vos propres images.
+Ajoutez vos photos ici dans le dossier 'images'.
+
+Images nécessaires:
+- coiffure1.jpg
+- coiffure2.jpg
+- esthetique1.jpg
+- esthetique2.jpg
+- manucure.jpg
+- salon.jpg
+
+هذا الملف سيتم استبداله بصوركم الخاصة.
+أضف صورك هنا في مجلد 'images'.
