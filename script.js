@@ -5,18 +5,21 @@ let currentLang = 'fr';
 function toggleLanguage() {
     const html = document.documentElement;
     const langBtn = document.getElementById('langText');
+    const footerLangBtn = document.getElementById('footerLangText');
     
     if (currentLang === 'fr') {
         currentLang = 'ar';
         html.setAttribute('lang', 'ar');
         html.setAttribute('dir', 'rtl');
-        langBtn.textContent = 'Français';
+        if (langBtn) langBtn.textContent = 'Français';
+        if (footerLangBtn) footerLangBtn.textContent = 'Français';
         translatePage('ar');
     } else {
         currentLang = 'fr';
         html.setAttribute('lang', 'fr');
         html.setAttribute('dir', 'ltr');
-        langBtn.textContent = 'العربية';
+        if (langBtn) langBtn.textContent = 'العربية';
+        if (footerLangBtn) footerLangBtn.textContent = 'العربية';
         translatePage('fr');
     }
     
@@ -47,6 +50,22 @@ function translatePage(lang) {
     });
 }
 
+// Menu hamburger pour mobile
+function toggleMenu() {
+    const navMenu = document.getElementById('navMenu');
+    const hamburger = document.querySelector('.hamburger');
+    
+    navMenu.classList.toggle('active');
+    hamburger.classList.toggle('active');
+    
+    // Bloquer le scroll du body quand le menu est ouvert
+    if (navMenu.classList.contains('active')) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = '';
+    }
+}
+
 // Charger la langue préférée au chargement de la page
 window.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('preferredLanguage');
@@ -62,24 +81,26 @@ window.addEventListener('DOMContentLoaded', () => {
     
     // Smooth scroll pour les liens de navigation
     setupSmoothScroll();
+    
+    // Gestion du menu mobile
+    setupMobileMenu();
 });
 
-// Menu hamburger pour mobile
-function toggleMenu() {
-    const navMenu = document.getElementById('navMenu');
-    navMenu.classList.toggle('active');
-}
-
-// Fermer le menu mobile lors du clic sur un lien
-document.addEventListener('DOMContentLoaded', () => {
+// Configuration du menu mobile
+function setupMobileMenu() {
     const navLinks = document.querySelectorAll('.nav-menu a');
+    const navMenu = document.getElementById('navMenu');
+    const hamburger = document.querySelector('.hamburger');
+    
+    // Fermer le menu quand on clique sur un lien
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
-            const navMenu = document.getElementById('navMenu');
             navMenu.classList.remove('active');
+            hamburger.classList.remove('active');
+            document.body.style.overflow = '';
         });
     });
-});
+}
 
 // Smooth scroll pour les liens d'ancrage
 function setupSmoothScroll() {
@@ -93,7 +114,7 @@ function setupSmoothScroll() {
             
             const targetSection = document.querySelector(targetId);
             if (targetSection) {
-                const offsetTop = targetSection.offsetTop - 70;
+                const offsetTop = targetSection.offsetTop - 80;
                 window.scrollTo({
                     top: offsetTop,
                     behavior: 'smooth'

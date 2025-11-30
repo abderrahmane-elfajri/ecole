@@ -1,0 +1,11 @@
+# Robots.txt pour Palme d'Or - École de Coiffure et Esthétique
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://abderrahmane-elfajri.github.io/ecole/sitemap.xml
+
+# Bloquer les fichiers inutiles
+Disallow: /images/PLACEHOLDER.txt
+Disallow: /images/LOGO_INFO.txt

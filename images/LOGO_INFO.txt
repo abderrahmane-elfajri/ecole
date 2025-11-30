@@ -1,0 +1,23 @@
+📝 INSTRUCTIONS POUR LE LOGO
+
+Ajoutez votre logo ici avec le nom: logo.png
+
+Spécifications recommandées:
+- Format: PNG (avec fond transparent)
+- Dimensions: 200x200 pixels minimum
+- Couleurs: Or (#AB9453) et noir (#000000)
+- Taille de fichier: Moins de 100KB
+
+Le logo sera automatiquement redimensionné à 50px de hauteur dans la barre de navigation.
+
+---
+
+معلومات الشعار
+
+أضف شعارك هنا باسم: logo.png
+
+المواصفات الموصى بها:
+- الصيغة: PNG (بخلفية شفافة)
+- الأبعاد: 200x200 بكسل على الأقل
+- الألوان: الذهبي (#AB9453) والأسود (#000000)
+- حجم الملف: أقل من 100KB

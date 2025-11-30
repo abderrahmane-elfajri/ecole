@@ -1,10 +1,10 @@
-# Portfolio École de Coiffure et Esthétique / مدرسة التجميل والحلاقة
+# Palme d'Or - École de Coiffure et Esthétique / بالم دور - مدرسة التجميل والحلاقة
 
 ## 📝 Description
 
-Site web professionnel bilingue (Français/Arabe) pour une école de coiffure et d'esthétique. Ce portfolio présente les formations, la galerie des travaux, les témoignages et les informations de contact.
+Site web professionnel bilingue (Français/Arabe) pour l'école Palme d'Or - spécialisée en coiffure et esthétique. Ce portfolio présente les formations, la galerie des travaux, les témoignages et les informations de contact.
 
-موقع ويب مهني ثنائي اللغة (الفرنسية/العربية) لمدرسة التجميل والحلاقة. يعرض هذا الموقع التكوينات والمعرض والشهادات ومعلومات الاتصال.
+موقع ويب مهني ثنائي اللغة (الفرنسية/العربية) لمدرسة بالم دور المتخصصة في التجميل والحلاقة. يعرض هذا الموقع التكوينات والمعرض والشهادات ومعلومات الاتصال.
 
 ## ✨ Fonctionnalités / المميزات
 
@@ -149,7 +149,7 @@ Pour toute question ou assistance, contactez :
 
 ## 📄 Licence
 
-© 2024 École de Coiffure et Esthétique. Tous droits réservés.
+© 2024 Palme d'Or - École de Coiffure et Esthétique. Tous droits réservés.
 
 ---
 
